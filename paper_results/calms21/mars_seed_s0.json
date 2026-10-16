@@ -1,0 +1,53 @@
+{
+ "args": {
+  "emb": "../data_external/emb_calms/mars",
+  "feats": "all",
+  "ctx": 1,
+  "stride": 2,
+  "models": [
+   "linear",
+   "gbm"
+  ],
+  "C": [
+   0.01,
+   0.1,
+   1.0
+  ],
+  "out": "results_calms/mars_all_ctx1.json",
+  "tag": "mars",
+  "seed": 0
+ },
+ "n_features": 948,
+ "results": {
+  "linear": {
+   "f1": {
+    "attack": 0.7772573421313549,
+    "investigation": 0.8314278052704712,
+    "mount": 0.9109906889015299
+   },
+   "ap": {
+    "attack": 0.8327316008179988,
+    "investigation": 0.9034599118057662,
+    "mount": 0.9634486380453909
+   },
+   "avg_f1": 0.8398919454344521,
+   "map": 0.899880050223052,
+   "C": 0.01
+  },
+  "gbm": {
+   "f1": {
+    "attack": 0.8426253744699063,
+    "investigation": 0.8652637023388127,
+    "mount": 0.9290673971206523
+   },
+   "ap": {
+    "attack": 0.8997945608087032,
+    "investigation": 0.9430079183776074,
+    "mount": 0.9739591127573295
+   },
+   "avg_f1": 0.8789854913097904,
+   "map": 0.9389205306478802,
+   "n_iter": 209
+  }
+ }
+}

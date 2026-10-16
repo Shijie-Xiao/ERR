@@ -1,0 +1,52 @@
+{
+ "args": {
+  "emb": "../data_external/emb_calms/err",
+  "feats": "geo",
+  "ctx": 1,
+  "stride": 2,
+  "models": [
+   "linear",
+   "gbm"
+  ],
+  "C": [
+   0.01,
+   0.1,
+   1.0
+  ],
+  "out": "results_calms/err_geo_ctx1.json",
+  "tag": "err_geo"
+ },
+ "n_features": 90,
+ "results": {
+  "linear": {
+   "f1": {
+    "attack": 0.7364079735524205,
+    "investigation": 0.8109295928269534,
+    "mount": 0.8996294601337487
+   },
+   "ap": {
+    "attack": 0.7371781726197617,
+    "investigation": 0.8686346468849397,
+    "mount": 0.9493554289188166
+   },
+   "avg_f1": 0.8156556755043741,
+   "map": 0.8517227494745061,
+   "C": 0.01
+  },
+  "gbm": {
+   "f1": {
+    "attack": 0.8215100320872154,
+    "investigation": 0.846157535451072,
+    "mount": 0.9158714173819914
+   },
+   "ap": {
+    "attack": 0.8600441405178916,
+    "investigation": 0.9236053447379061,
+    "mount": 0.974073929706295
+   },
+   "avg_f1": 0.8611796616400929,
+   "map": 0.9192411383206975,
+   "n_iter": 299
+  }
+ }
+}

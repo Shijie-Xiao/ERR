@@ -1,0 +1,7 @@
+# normalise text files in the repository; shell / Slurm scripts always keep LF (they run on Linux clusters)
+* text=auto
+*.sh text eol=lf
+*.slurm text eol=lf
+*.pth.tar binary
+*.npy binary
+*.npz binary

@@ -1,0 +1,37 @@
+{
+ "args": {
+  "emb": "../data_external/emb_calms/err_rec4",
+  "feats": "geo",
+  "ctx": 1,
+  "stride": 2,
+  "models": [
+   "gbm"
+  ],
+  "C": [
+   0.01,
+   0.1,
+   1.0
+  ],
+  "out": "results_calms/err_rec4_geo_ctx1_s2.json",
+  "tag": "geo_s2",
+  "seed": 2
+ },
+ "n_features": 90,
+ "results": {
+  "gbm": {
+   "f1": {
+    "attack": 0.8180233233892527,
+    "investigation": 0.8445228272059117,
+    "mount": 0.9162332067524013
+   },
+   "ap": {
+    "attack": 0.863688454404248,
+    "investigation": 0.9221456424427914,
+    "mount": 0.9740390300170829
+   },
+   "avg_f1": 0.8595931191158552,
+   "map": 0.9199577089547075,
+   "n_iter": 300
+  }
+ }
+}

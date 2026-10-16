@@ -1,0 +1,122 @@
+{
+ "args": {
+  "emb": [
+   "../data_external/emb/err_36_ep27_window"
+  ],
+  "labels": "../data_external/mabe22/mouse_triplets_test_labels.npy",
+  "split": "../data_external/mabe22/jax_split.json",
+  "feats": "all",
+  "pca": 0,
+  "stride": 4,
+  "alphas": [
+   0.1,
+   0.5,
+   1.0,
+   2.0,
+   5.0
+  ],
+  "seed": 42,
+  "tasks": null,
+  "out": "results_mabe/err_36_ep27_window_all.json",
+  "tag": "err_36_ep27_window_all"
+ },
+ "n_features": 216,
+ "results": {
+  "experiment_day": {
+   "metric": "mse",
+   "score": 0.09286626428365707,
+   "alpha": 0.1,
+   "val": 0.08756767213344574,
+   "pos_rate_test": null,
+   "pooled": 0.09111661463975906
+  },
+  "time_of_day": {
+   "metric": "mse",
+   "score": 0.0943339392542839,
+   "alpha": 0.1,
+   "val": 0.09799817949533463,
+   "pos_rate_test": null,
+   "pooled": 0.09298163652420044
+  },
+  "strain": {
+   "metric": "f1",
+   "score": 0.7180244454834146,
+   "alpha": 5.0,
+   "val": 0.6926413963364456,
+   "pos_rate_test": 0.4232209622859955,
+   "pooled": 0.8009205983889528
+  },
+  "approaches": {
+   "metric": "f1",
+   "score": 0.0485836044702221,
+   "alpha": 2.0,
+   "val": 0.04330275229357798,
+   "pos_rate_test": 0.00358614232391119
+  },
+  "chases": {
+   "metric": "f1",
+   "score": 0.04380730606898559,
+   "alpha": 2.0,
+   "val": 0.04538191115372323,
+   "pos_rate_test": 0.0006465875776484609
+  },
+  "close": {
+   "metric": "f1",
+   "score": 0.752842545563191,
+   "alpha": 5.0,
+   "val": 0.7486737584072184,
+   "pos_rate_test": 0.3950894773006439
+  },
+  "contact": {
+   "metric": "f1",
+   "score": 0.605425627154803,
+   "alpha": 0.1,
+   "val": 0.6151486412120787,
+   "pos_rate_test": 0.2585424482822418
+  },
+  "huddles": {
+   "metric": "f1",
+   "score": 0.3438925815355151,
+   "alpha": 1.0,
+   "val": 0.4967635246869832,
+   "pos_rate_test": 0.057500001043081284
+  },
+  "oral_ear_contact": {
+   "metric": "f1",
+   "score": 0.014826649344037079,
+   "alpha": 2.0,
+   "val": 0.020455998295333476,
+   "pos_rate_test": 0.0010221598204225302
+  },
+  "oral_genital_contact": {
+   "metric": "f1",
+   "score": 0.028055841230414467,
+   "alpha": 0.1,
+   "val": 0.03142461964038727,
+   "pos_rate_test": 0.002296608407050371
+  },
+  "oral_oral_contact": {
+   "metric": "f1",
+   "score": 0.03376776127331019,
+   "alpha": 5.0,
+   "val": 0.042377009254749146,
+   "pos_rate_test": 0.002053162781521678
+  },
+  "watching": {
+   "metric": "f1",
+   "score": 0.1887525171277182,
+   "alpha": 0.1,
+   "val": 0.2292857142857143,
+   "pos_rate_test": 0.02616417035460472
+  },
+  "lights": {
+   "metric": "f1",
+   "score": 0.6806152159105324,
+   "alpha": 5.0,
+   "val": 0.633213468453743,
+   "pos_rate_test": 0.4101123511791229,
+   "pooled": 0.6983425414364641
+  }
+ },
+ "mean_f1": 0.31441764501474034
+}

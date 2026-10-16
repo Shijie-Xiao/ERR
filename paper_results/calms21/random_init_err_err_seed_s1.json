@@ -1,0 +1,37 @@
+{
+ "args": {
+  "emb": "embeddings/calms21/random_err",
+  "feats": "err",
+  "ctx": 1,
+  "stride": 2,
+  "models": [
+   "gbm"
+  ],
+  "C": [
+   0.01,
+   0.1,
+   1.0
+  ],
+  "out": "paper_results/calms21/random_init_err_err_seed_s1.json",
+  "tag": "random_err",
+  "seed": 1
+ },
+ "n_features": 426,
+ "results": {
+  "gbm": {
+   "f1": {
+    "attack": 0.7913358513836429,
+    "investigation": 0.7640128255543119,
+    "mount": 0.8442738366635376
+   },
+   "ap": {
+    "attack": 0.8446003238356558,
+    "investigation": 0.8258717169302666,
+    "mount": 0.925549404324172
+   },
+   "avg_f1": 0.7998741712004976,
+   "map": 0.8653404816966982,
+   "n_iter": 300
+  }
+ }
+}

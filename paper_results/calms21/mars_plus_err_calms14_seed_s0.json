@@ -1,0 +1,53 @@
+{
+ "args": {
+  "emb": "../data_external/emb_calms/marsphx_plus_err",
+  "feats": "all",
+  "ctx": 1,
+  "stride": 2,
+  "models": [
+   "linear",
+   "gbm"
+  ],
+  "C": [
+   0.01,
+   0.1,
+   1.0
+  ],
+  "out": "results_calms/marsphx_plus_err_all_ctx1.json",
+  "tag": "marsphx_plus_err",
+  "seed": 0
+ },
+ "n_features": 1482,
+ "results": {
+  "linear": {
+   "f1": {
+    "attack": 0.7789315991964864,
+    "investigation": 0.8442730327662102,
+    "mount": 0.9101038544221395
+   },
+   "ap": {
+    "attack": 0.8540426605771676,
+    "investigation": 0.9184506193240168,
+    "mount": 0.957473532884501
+   },
+   "avg_f1": 0.8444361621282788,
+   "map": 0.9099889375952284,
+   "C": 0.01
+  },
+  "gbm": {
+   "f1": {
+    "attack": 0.8527851972283513,
+    "investigation": 0.8681208433793427,
+    "mount": 0.9295533463349664
+   },
+   "ap": {
+    "attack": 0.9073458061367878,
+    "investigation": 0.9463503280954765,
+    "mount": 0.9727220627436458
+   },
+   "avg_f1": 0.8834864623142201,
+   "map": 0.9421393989919701,
+   "n_iter": 214
+  }
+ }
+}

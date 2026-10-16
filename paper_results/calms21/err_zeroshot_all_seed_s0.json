@@ -1,0 +1,53 @@
+{
+ "args": {
+  "emb": "../data_external/emb_calms/err_rec4",
+  "feats": "all",
+  "ctx": 1,
+  "stride": 2,
+  "models": [
+   "linear",
+   "gbm"
+  ],
+  "C": [
+   0.01,
+   0.1,
+   1.0
+  ],
+  "out": "results/smoke/calms_err_rec4_all.json",
+  "tag": "",
+  "seed": 0
+ },
+ "n_features": 516,
+ "results": {
+  "linear": {
+   "f1": {
+    "attack": 0.7696965792694711,
+    "investigation": 0.8423118437837307,
+    "mount": 0.9172091345069682
+   },
+   "ap": {
+    "attack": 0.8482892843818002,
+    "investigation": 0.9175427317992527,
+    "mount": 0.956592552213826
+   },
+   "avg_f1": 0.8430725191867232,
+   "map": 0.9074748561316263,
+   "C": 0.01
+  },
+  "gbm": {
+   "f1": {
+    "attack": 0.8346311711227895,
+    "investigation": 0.8571173206145946,
+    "mount": 0.9194975145711246
+   },
+   "ap": {
+    "attack": 0.8844728648919495,
+    "investigation": 0.9360367149437567,
+    "mount": 0.97673783343093
+   },
+   "avg_f1": 0.8704153354361696,
+   "map": 0.9324158044222122,
+   "n_iter": 232
+  }
+ }
+}

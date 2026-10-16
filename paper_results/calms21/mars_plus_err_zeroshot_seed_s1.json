@@ -1,0 +1,37 @@
+{
+ "args": {
+  "emb": "../data_external/emb_calms/mars_plus_err",
+  "feats": "all",
+  "ctx": 1,
+  "stride": 2,
+  "models": [
+   "gbm"
+  ],
+  "C": [
+   0.01,
+   0.1,
+   1.0
+  ],
+  "out": "results_calms/mars_plus_err_all_ctx1_s1.json",
+  "tag": "mars_plus_err_s1",
+  "seed": 1
+ },
+ "n_features": 1464,
+ "results": {
+  "gbm": {
+   "f1": {
+    "attack": 0.8560266574744341,
+    "investigation": 0.8723238361326793,
+    "mount": 0.9282116268018374
+   },
+   "ap": {
+    "attack": 0.9083278531773592,
+    "investigation": 0.94520375252402,
+    "mount": 0.9708394196411426
+   },
+   "avg_f1": 0.8855207068029834,
+   "map": 0.9414570084475072,
+   "n_iter": 192
+  }
+ }
+}

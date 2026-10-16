@@ -1,0 +1,122 @@
+{
+ "args": {
+  "emb": [
+   "../data_external/emb/handcrafted"
+  ],
+  "labels": "../data_external/mabe22/mouse_triplets_test_labels.npy",
+  "split": "../data_external/mabe22/jax_split.json",
+  "feats": "all",
+  "pca": 0,
+  "stride": 4,
+  "alphas": [
+   0.1,
+   0.5,
+   1.0,
+   2.0,
+   5.0
+  ],
+  "seed": 42,
+  "tasks": null,
+  "out": "results_mabe/handcrafted.json",
+  "tag": "handcrafted"
+ },
+ "n_features": 101,
+ "results": {
+  "experiment_day": {
+   "metric": "mse",
+   "score": 0.09326780587434769,
+   "alpha": 1.0,
+   "val": 0.08659084141254425,
+   "pos_rate_test": null,
+   "pooled": 0.09247288852930069
+  },
+  "time_of_day": {
+   "metric": "mse",
+   "score": 0.09403903037309647,
+   "alpha": 5.0,
+   "val": 0.09890861809253693,
+   "pos_rate_test": null,
+   "pooled": 0.0934046134352684
+  },
+  "strain": {
+   "metric": "f1",
+   "score": 0.6367740090782372,
+   "alpha": 5.0,
+   "val": 0.6102567576722444,
+   "pos_rate_test": 0.4232209622859955,
+   "pooled": 0.7111597374179431
+  },
+  "approaches": {
+   "metric": "f1",
+   "score": 0.034898502435579376,
+   "alpha": 0.5,
+   "val": 0.023590617571870656,
+   "pos_rate_test": 0.00358614232391119
+  },
+  "chases": {
+   "metric": "f1",
+   "score": 0.03415281657033821,
+   "alpha": 0.5,
+   "val": 0.04644412191582003,
+   "pos_rate_test": 0.0006465875776484609
+  },
+  "close": {
+   "metric": "f1",
+   "score": 0.7403276866400612,
+   "alpha": 5.0,
+   "val": 0.7370725175113308,
+   "pos_rate_test": 0.3950894773006439
+  },
+  "contact": {
+   "metric": "f1",
+   "score": 0.5893968743798096,
+   "alpha": 0.5,
+   "val": 0.6118364966123749,
+   "pos_rate_test": 0.2585424482822418
+  },
+  "huddles": {
+   "metric": "f1",
+   "score": 0.22737386313068433,
+   "alpha": 5.0,
+   "val": 0.35309577445559426,
+   "pos_rate_test": 0.057500001043081284
+  },
+  "oral_ear_contact": {
+   "metric": "f1",
+   "score": 0.008004982121740103,
+   "alpha": 5.0,
+   "val": 0.010892097958610028,
+   "pos_rate_test": 0.0010221598204225302
+  },
+  "oral_genital_contact": {
+   "metric": "f1",
+   "score": 0.027480718128200143,
+   "alpha": 5.0,
+   "val": 0.03654798396604574,
+   "pos_rate_test": 0.002296608407050371
+  },
+  "oral_oral_contact": {
+   "metric": "f1",
+   "score": 0.02450394764180345,
+   "alpha": 5.0,
+   "val": 0.027105882352941178,
+   "pos_rate_test": 0.002053162781521678
+  },
+  "watching": {
+   "metric": "f1",
+   "score": 0.05099458604537989,
+   "alpha": 0.5,
+   "val": 0.287087192032151,
+   "pos_rate_test": 0.02616417035460472
+  },
+  "lights": {
+   "metric": "f1",
+   "score": 0.6272514304757778,
+   "alpha": 0.1,
+   "val": 0.5622287191051597,
+   "pos_rate_test": 0.4101123511791229,
+   "pooled": 0.6475972540045767
+  }
+ },
+ "mean_f1": 0.27283267424069196
+}

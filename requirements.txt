@@ -1,0 +1,10 @@
+# core (model, training, trajectory evaluation)
+torch>=1.13
+numpy>=1.21
+# representation readouts (eval/mabe22, eval/calms21, eval/resifuse)
+scikit-learn>=1.1
+# ResiFuse pose conversion / protocol (pandas HDF5 files from Hugging Face)
+pandas>=1.5
+tables>=3.7
+huggingface_hub>=0.20
+# official MABe22 evaluator (data/mabe22/evaluator clone) additionally needs: pandas, tqdm

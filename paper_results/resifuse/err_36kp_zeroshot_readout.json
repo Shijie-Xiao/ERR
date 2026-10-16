@@ -1,0 +1,49 @@
+{
+ "args": {
+  "frames": "../data_external/resifuse/finetune_scored_frames.npz",
+  "emb": [
+   "embeddings/resifuse/err_36kp"
+  ],
+  "feats": "all",
+  "ctx": 1,
+  "C": [
+   0.001,
+   0.01,
+   0.1,
+   1.0
+  ],
+  "seeds": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "out": "paper_results/resifuse/err_36kp_zeroshot_readout.json",
+  "tag": "err_36kp_zeroshot"
+ },
+ "n_features": 648,
+ "results": {
+  "linear": {
+   "macro_f1": 0.7061969663682058,
+   "per_class": {
+    "chases": 0.8679245283018868,
+    "huddles": 0.8722927557879014,
+    "oral_contact": 0.5311871227364185,
+    "oral_genital_contact": 0.5533834586466165
+   },
+   "C": 0.001,
+   "val_macro": 0.8416881018171924
+  },
+  "gbm": {
+   "macro_f1": 0.5741551814718135,
+   "macro_std": 0.0,
+   "per_class": {
+    "chases": 0.8471615720524017,
+    "huddles": 0.6574154379878577,
+    "oral_contact": 0.5573770491803278,
+    "oral_genital_contact": 0.23466666666666666
+   }
+  }
+ }
+}

@@ -1,0 +1,52 @@
+{
+ "args": {
+  "emb": "../data_external/emb_calms/err_rec4",
+  "feats": "err",
+  "ctx": 1,
+  "stride": 2,
+  "models": [
+   "linear",
+   "gbm"
+  ],
+  "C": [
+   0.01,
+   0.1,
+   1.0
+  ],
+  "out": "results_calms/err_rec4_err_ctx1.json",
+  "tag": "err_rec4_err"
+ },
+ "n_features": 426,
+ "results": {
+  "linear": {
+   "f1": {
+    "attack": 0.758473779838356,
+    "investigation": 0.8389554400052656,
+    "mount": 0.9160712413307569
+   },
+   "ap": {
+    "attack": 0.8352177581159388,
+    "investigation": 0.9123811995225536,
+    "mount": 0.9524290130351778
+   },
+   "avg_f1": 0.8378334870581261,
+   "map": 0.9000093235578901,
+   "C": 0.01
+  },
+  "gbm": {
+   "f1": {
+    "attack": 0.8267680258005068,
+    "investigation": 0.8567912828068585,
+    "mount": 0.9216225233956689
+   },
+   "ap": {
+    "attack": 0.8817117666363344,
+    "investigation": 0.934673198459592,
+    "mount": 0.9757439050343015
+   },
+   "avg_f1": 0.8683939440010113,
+   "map": 0.9307096233767428,
+   "n_iter": 195
+  }
+ }
+}

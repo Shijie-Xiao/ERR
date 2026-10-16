@@ -1,0 +1,53 @@
+{
+ "args": {
+  "emb": "../data_external/emb_calms/err_calmstrained_phx",
+  "feats": "all",
+  "ctx": 1,
+  "stride": 2,
+  "models": [
+   "linear",
+   "gbm"
+  ],
+  "C": [
+   0.01,
+   0.1,
+   1.0
+  ],
+  "out": "results_calms/err_calmstrained_phx_all_s1.json",
+  "tag": "phx_1",
+  "seed": 1
+ },
+ "n_features": 534,
+ "results": {
+  "linear": {
+   "f1": {
+    "attack": 0.7480283051217307,
+    "investigation": 0.8418374069438039,
+    "mount": 0.9099111250992911
+   },
+   "ap": {
+    "attack": 0.8329270879023261,
+    "investigation": 0.918026414648095,
+    "mount": 0.9551043331163473
+   },
+   "avg_f1": 0.8332589457216085,
+   "map": 0.9020192785555894,
+   "C": 0.01
+  },
+  "gbm": {
+   "f1": {
+    "attack": 0.8405430280717902,
+    "investigation": 0.8606879706900061,
+    "mount": 0.9243622732615394
+   },
+   "ap": {
+    "attack": 0.8885459038917348,
+    "investigation": 0.9391264916081502,
+    "mount": 0.9791213120351905
+   },
+   "avg_f1": 0.8751977573411119,
+   "map": 0.935597902511692,
+   "n_iter": 208
+  }
+ }
+}

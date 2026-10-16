@@ -1,0 +1,47 @@
+{
+ "args": {
+  "frames": "../data_external/resifuse/finetune_scored_frames.npz",
+  "emb": [
+   "../data_external/resifuse/emb/handcrafted"
+  ],
+  "feats": "all",
+  "ctx": 1,
+  "C": [
+   0.001,
+   0.01,
+   0.1,
+   1.0
+  ],
+  "seeds": [
+   0,
+   1,
+   2
+  ],
+  "out": "results_resifuse/handcrafted.json",
+  "tag": "handcrafted"
+ },
+ "n_features": 303,
+ "results": {
+  "linear": {
+   "macro_f1": 0.6708205918541998,
+   "per_class": {
+    "chases": 0.8154506437768241,
+    "huddles": 0.8382242287434161,
+    "oral_contact": 0.5088062622309197,
+    "oral_genital_contact": 0.5208012326656395
+   },
+   "C": 0.01,
+   "val_macro": 0.8362677051822114
+  },
+  "gbm": {
+   "macro_f1": 0.634930991984044,
+   "macro_std": 0.0,
+   "per_class": {
+    "chases": 0.7115902964959568,
+    "huddles": 0.7893890675241156,
+    "oral_contact": 0.4889975550122249,
+    "oral_genital_contact": 0.5497470489038786
+   }
+  }
+ }
+}

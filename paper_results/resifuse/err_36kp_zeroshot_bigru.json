@@ -1,0 +1,92 @@
+{
+ "args": {
+  "code": "../data_external/resifuse/code",
+  "frames": "../data_external/resifuse/finetune_scored_frames.npz",
+  "emb": "embeddings/resifuse/err_36kp",
+  "kind": "err",
+  "seeds": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "epochs": 50,
+  "lr": 0.0001,
+  "wd": 0.01,
+  "batch": 32,
+  "d_z": 128,
+  "out": "paper_results/resifuse/err_36kp_zeroshot_bigru.json",
+  "tag": "err_36kp_zeroshot"
+ },
+ "results": [
+  {
+   "seed": 0,
+   "val_macro": 0.8367858421039435,
+   "test_macro": 0.7627585447782438,
+   "test_per_class": {
+    "chases": 0.848,
+    "huddles": 0.9250374812593704,
+    "oral_contact": 0.6121739130434782,
+    "oral_genital_contact": 0.6658227848101266
+   },
+   "best_epoch": 49
+  },
+  {
+   "seed": 1,
+   "val_macro": 0.8374105095119588,
+   "test_macro": 0.7552328020629638,
+   "test_per_class": {
+    "chases": 0.8472505091649695,
+    "huddles": 0.9150521609538003,
+    "oral_contact": 0.6347517730496454,
+    "oral_genital_contact": 0.6238767650834403
+   },
+   "best_epoch": 49
+  },
+  {
+   "seed": 2,
+   "val_macro": 0.8327447788232102,
+   "test_macro": 0.7512303977642552,
+   "test_per_class": {
+    "chases": 0.83399209486166,
+    "huddles": 0.9156626506024096,
+    "oral_contact": 0.6003372681281619,
+    "oral_genital_contact": 0.6549295774647887
+   },
+   "best_epoch": 36
+  },
+  {
+   "seed": 3,
+   "val_macro": 0.8411810961704804,
+   "test_macro": 0.7591636610782109,
+   "test_per_class": {
+    "chases": 0.8427672955974843,
+    "huddles": 0.9154302670623146,
+    "oral_contact": 0.6041275797373359,
+    "oral_genital_contact": 0.6743295019157088
+   },
+   "best_epoch": 47
+  },
+  {
+   "seed": 4,
+   "val_macro": 0.8555976530417075,
+   "test_macro": 0.761043081877851,
+   "test_per_class": {
+    "chases": 0.8711656441717791,
+    "huddles": 0.9224011713030746,
+    "oral_contact": 0.5886939571150097,
+    "oral_genital_contact": 0.6619115549215406
+   },
+   "best_epoch": 49
+  }
+ ],
+ "macro_mean": 0.757885697512305,
+ "macro_std": 0.004163598837214543,
+ "per_class_mean": {
+  "chases": 0.8486351087591787,
+  "huddles": 0.9187167462361938,
+  "oral_contact": 0.6080168982147263,
+  "oral_genital_contact": 0.656174036839121
+ }
+}

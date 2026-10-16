@@ -1,0 +1,37 @@
+{
+ "args": {
+  "emb": "../data_external/emb_calms/mars",
+  "feats": "all",
+  "ctx": 1,
+  "stride": 2,
+  "models": [
+   "gbm"
+  ],
+  "C": [
+   0.01,
+   0.1,
+   1.0
+  ],
+  "out": "results_calms/mars_all_ctx1_s1.json",
+  "tag": "mars_s1",
+  "seed": 1
+ },
+ "n_features": 948,
+ "results": {
+  "gbm": {
+   "f1": {
+    "attack": 0.8433304880887716,
+    "investigation": 0.8659910455963407,
+    "mount": 0.9278782112274024
+   },
+   "ap": {
+    "attack": 0.8988233049823038,
+    "investigation": 0.9430336229304286,
+    "mount": 0.9713299134382612
+   },
+   "avg_f1": 0.8790665816375048,
+   "map": 0.937728947116998,
+   "n_iter": 154
+  }
+ }
+}

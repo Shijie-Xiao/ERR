@@ -1,0 +1,18 @@
+# raw data, embeddings and training / evaluation outputs are not versioned;
+# the preprocessed files in data/windows and data/resifuse are (see data/README.md)
+data/*
+!data/README.md
+!data/windows/
+!data/resifuse/
+data/resifuse/*
+!data/resifuse/finetune108_dlcrf.npy
+!data/resifuse/finetune_scored_frames.npz
+embeddings/
+results/
+runs/
+logs/
+__pycache__/
+*.pyc
+checkpoints/*_last.pth.tar
+checkpoints/random_*.pth.tar
+runs_smoke/

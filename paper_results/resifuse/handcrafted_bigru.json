@@ -1,0 +1,92 @@
+{
+ "args": {
+  "code": "../data_external/resifuse/code",
+  "frames": "../data_external/resifuse/finetune_scored_frames.npz",
+  "emb": "../data_external/resifuse/emb/handcrafted",
+  "kind": "hand",
+  "seeds": [
+   0,
+   1,
+   2,
+   3,
+   4
+  ],
+  "epochs": 50,
+  "lr": 0.0001,
+  "wd": 0.01,
+  "batch": 32,
+  "d_z": 128,
+  "out": "results_resifuse/handcrafted_bigru.json",
+  "tag": "handcrafted"
+ },
+ "results": [
+  {
+   "seed": 0,
+   "val_macro": 0.8460016331558593,
+   "test_macro": 0.7260651409291903,
+   "test_per_class": {
+    "chases": 0.7945736434108527,
+    "huddles": 0.840782122905028,
+    "oral_contact": 0.5649484536082474,
+    "oral_genital_contact": 0.703956343792633
+   },
+   "best_epoch": 49
+  },
+  {
+   "seed": 1,
+   "val_macro": 0.8344982416681541,
+   "test_macro": 0.7236623995450435,
+   "test_per_class": {
+    "chases": 0.8047337278106509,
+    "huddles": 0.7942583732057417,
+    "oral_contact": 0.6023622047244095,
+    "oral_genital_contact": 0.6932952924393724
+   },
+   "best_epoch": 42
+  },
+  {
+   "seed": 2,
+   "val_macro": 0.8263724257789101,
+   "test_macro": 0.7317310603939644,
+   "test_per_class": {
+    "chases": 0.7900763358778626,
+    "huddles": 0.8172942817294282,
+    "oral_contact": 0.6078799249530957,
+    "oral_genital_contact": 0.7116736990154712
+   },
+   "best_epoch": 39
+  },
+  {
+   "seed": 3,
+   "val_macro": 0.8398336024327296,
+   "test_macro": 0.7110889568629246,
+   "test_per_class": {
+    "chases": 0.7900763358778626,
+    "huddles": 0.8069444444444445,
+    "oral_contact": 0.5866666666666667,
+    "oral_genital_contact": 0.6606683804627249
+   },
+   "best_epoch": 42
+  },
+  {
+   "seed": 4,
+   "val_macro": 0.8340763542243951,
+   "test_macro": 0.7068440026688727,
+   "test_per_class": {
+    "chases": 0.792156862745098,
+    "huddles": 0.7955801104972375,
+    "oral_contact": 0.5294117647058824,
+    "oral_genital_contact": 0.7102272727272727
+   },
+   "best_epoch": 45
+  }
+ ],
+ "macro_mean": 0.7198783120799991,
+ "macro_std": 0.009383280862293215,
+ "per_class_mean": {
+  "chases": 0.7943233811444653,
+  "huddles": 0.810971866556376,
+  "oral_contact": 0.5782538029316603,
+  "oral_genital_contact": 0.6959641976874948
+ }
+}

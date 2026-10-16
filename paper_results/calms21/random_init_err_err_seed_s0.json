@@ -1,0 +1,53 @@
+{
+ "args": {
+  "emb": "embeddings/calms21/random_err",
+  "feats": "err",
+  "ctx": 1,
+  "stride": 2,
+  "models": [
+   "linear",
+   "gbm"
+  ],
+  "C": [
+   0.01,
+   0.1,
+   1.0
+  ],
+  "out": "paper_results/calms21/random_init_err_err_seed_s0.json",
+  "tag": "random_err",
+  "seed": 0
+ },
+ "n_features": 426,
+ "results": {
+  "linear": {
+   "f1": {
+    "attack": 0.7575671135621692,
+    "investigation": 0.8127382250196946,
+    "mount": 0.9068493559605367
+   },
+   "ap": {
+    "attack": 0.7717056352622448,
+    "investigation": 0.8780971619733827,
+    "mount": 0.942012855564702
+   },
+   "avg_f1": 0.8257182315141335,
+   "map": 0.8639385509334433,
+   "C": 1.0
+  },
+  "gbm": {
+   "f1": {
+    "attack": 0.786606086060097,
+    "investigation": 0.767035011685689,
+    "mount": 0.8445836194048596
+   },
+   "ap": {
+    "attack": 0.8393868277976004,
+    "investigation": 0.8288676516164393,
+    "mount": 0.9256618720266331
+   },
+   "avg_f1": 0.7994082390502152,
+   "map": 0.8646387838135575,
+   "n_iter": 300
+  }
+ }
+}

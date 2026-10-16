@@ -1,0 +1,37 @@
+{
+ "args": {
+  "emb": "../data_external/emb_calms/err_rec4",
+  "feats": "err",
+  "ctx": 1,
+  "stride": 2,
+  "models": [
+   "gbm"
+  ],
+  "C": [
+   0.01,
+   0.1,
+   1.0
+  ],
+  "out": "results_calms/err_rec4_err_ctx1_s2.json",
+  "tag": "err_err_s2",
+  "seed": 2
+ },
+ "n_features": 426,
+ "results": {
+  "gbm": {
+   "f1": {
+    "attack": 0.8272790643637209,
+    "investigation": 0.8556941075296733,
+    "mount": 0.9225935447015139
+   },
+   "ap": {
+    "attack": 0.8801007868556108,
+    "investigation": 0.933994982185663,
+    "mount": 0.9775262298949668
+   },
+   "avg_f1": 0.8685222388649695,
+   "map": 0.9305406663120802,
+   "n_iter": 210
+  }
+ }
+}
