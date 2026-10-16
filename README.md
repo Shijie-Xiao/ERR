@@ -260,6 +260,11 @@ python tests/test_model.py                   # constant-velocity init, exact E(2
                                              # metrics, 36-node path on real windows, ablation switches, overfit on 32 windows
 ```
 
+## License
+
+The code and the released checkpoints are under the MIT License (`LICENSE`).  The files in `data/` are derived
+from MABe22, CalMS21 and the ResiFuse poses and remain subject to the terms of those datasets (see `data/README.md`).
+
 ## Citation
 
 Paper and citation entry to be added.
